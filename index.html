@@ -75,7 +75,7 @@
 		parser.parse();
 		
 		// variables capa de busqueda del servicio a consultar  ------------------------------------------------------------------------------------------------------------------------------
-		var rutaServicio = "https://idearagon.aragon.es/arcgis/rest/services/INAGA/INAGA_Participacion_Ciudadana/MapServer";
+		var rutaServicio = "https://idearagon.aragon.es/servicios/rest/services/INAGA/INAGA_Participacion_Ciudadana/MapServer";
 		var tituloVisor = "<center><font color='white'>Localización de expedientes INAGA</br>en plazo de participación pública</font></center>"		
 		var urlDocumentacion = "http://idearagon.aragon.es/datosdescarga/descarga.php?file=medioambiente/inagis_docs/VisorINAGA_Participacion_Publica.html";
 		dom.byId("documentacion").href = urlDocumentacion;
@@ -187,7 +187,7 @@
 //			id:"xLimites",
 //			outFields: ["*"]
 //		});		
-        
+       
         var fcMunis = new FeatureLayer("https://idearagon.aragon.es/servicios/rest/services/INAGA/INAGA_Ambitos/MapServer/3");												
 		var dynamicMSLayerBasico = new esri.layers.ArcGISDynamicMapServiceLayer("https://idearagon.aragon.es/servicios/rest/services/INAGA/INAGA_Ambitos/MapServer",{
 			id:"xLimites",
