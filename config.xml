@@ -10,7 +10,7 @@
 <allow-intent href="*"/>
 <allow-navigation href="*"/>
 <access origin="*"/>
-<preference name="phonegap-version" value="cli-6.2.0" />
+<preference name="phonegap-version" value="cli-6.5.0" />
 <preference name="xwalkMultipleApk" value="false" />
 <plugin name="cordova-plugin-crosswalk-webview" spec="1.8.0"/>
 <plugin name="cordova-plugin-compat" spec="1.0.0"/>
@@ -25,6 +25,7 @@
 <preference name="android-installLocation" value="auto"/>
 <preference name="android-signed" value="true"/>
 <preference name="AndroidLaunchMode" value="singleTop"/>
+<preference name="Fullscreen" value="true"/>
 </platform>
 <config-file platform="android" parent="/manifest/application" mode="merge"> 
     <activity android:launchMode="singleTop" />

@@ -4,8 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Visor Participación Pública</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script>
     $(document).bind('mobileinit',function(){
         $.mobile.changePage.defaults.changeHash = false;
@@ -13,10 +13,10 @@
         $.mobile.pushStateEnabled = false;
     });
 </script> 
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
- <link rel="stylesheet" href="http://js.arcgis.com/3.13/dijit/themes/claro/claro.css">
-   <link rel="stylesheet" href="http://js.arcgis.com/3.13/esri/css/esri.css">
-  <script src="http://js.arcgis.com/3.13/"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+ <link rel="stylesheet" href="https://js.arcgis.com/3.20/dijit/themes/claro/claro.css">
+   <link rel="stylesheet" href="https://js.arcgis.com/3.20/esri/css/esri.css">
+  <script src="https://js.arcgis.com/3.20/"></script>
 <script> 
     var map, tb, url, coordx, coordy,poligonoConsulta;
     require([
@@ -77,7 +77,7 @@
 		// variables capa de busqueda del servicio a consultar  ------------------------------------------------------------------------------------------------------------------------------
 		var rutaServicio = "https://idearagon.aragon.es/servicios/rest/services/INAGA/INAGA_Participacion_Ciudadana/MapServer";
 		var tituloVisor = "<center><font color='white'>Localización de expedientes INAGA</br>en plazo de participación pública</font></center>"		
-		var urlDocumentacion = "http://idearagon.aragon.es/datosdescarga/descarga.php?file=medioambiente/inagis_docs/VisorINAGA_Participacion_Publica.html";
+		var urlDocumentacion = "https://idearagon.aragon.es/datosdescarga/descarga.php?file=medioambiente/inagis_docs/VisorINAGA_Participacion_Publica.html";
 		dom.byId("documentacion").href = urlDocumentacion;
 		dom.byId("tituloVisor").innerHTML = tituloVisor;
 		var numCapaInf = 9;
@@ -281,7 +281,7 @@
 				ymin = pt.ymin.toFixed(0);
 				xmax = pt.xmax.toFixed(0);
 				ymax = pt.ymax.toFixed(0);		
-				url = "https://idearagon.aragon.es/visor/index.html?BOX=" + xmin + ":"  + ymin + ":" + xmax + ":" + ymax;							
+				url = "http://idearagon.aragon.es/visor/index.html?BOX=" + xmin + ":"  + ymin + ":" + xmax + ":" + ymax;							
 				dom.byId("sitar").href = url ;				
 			});
 		}
