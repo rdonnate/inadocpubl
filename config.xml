@@ -25,7 +25,9 @@
 <preference name="android-signed" value="true"/>
 <preference name="AndroidLaunchMode" value="singleTop"/>
 <preference name="Fullscreen" value="true"/>
+<icon src="participa.png" width="180" height="180" />
 </platform>
+
 <config-file platform="android" parent="/manifest/application" mode="merge"> 
     <activity android:launchMode="singleTop" />
 </config-file>
